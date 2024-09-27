@@ -1,38 +1,325 @@
+/* src/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+/* src/App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for background image and centering */
+.background-image {
+  display: flex;                       /* Use flexbox */
+  justify-content: center;             /* Center horizontally */
+  align-items: center;                 /* Center vertically */
+  height: 150vh;                       /* Full viewport height */
+  background-image: url('C:\Users\ADMIN\Desktop\drainage\drain.jfif'); /* Update this with your background image path */
+  background-size: cover;              /* Cover the entire area */
+  background-position: center;         /* Center the background image */
+}
+/* src/TableOfContents.css */
+/* src/TableOfContents.css */
+.table-of-contents {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  background-color: white; /* Solid white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-of-contents h2 {
+  margin: 0;
+  color: black; /* Text color */
+}
+/* src/Toggle.css */
+.toggle-container {
+  margin-left: 20px; /* Space between the container and the toggle */
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.toggle-button:hover {
+  background-color: #f0f0f0; /* Slight change on hover */
+}
+
+
+/* src/Toggle.css */
+/* src/Toggle.css */
+.toggle-container {
+  margin-left: 20px; /* Space between the container and the toggle */
+  text-align: left;
+}
+
+.toggle-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #f0f0f0; /* Slight change on hover */
+}
+
+.topic-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: white; /* Background for the topic list */
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.topic-item {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin: 5px 0; /* Spacing between items */
+}
+
+.topic-detail {
+  background-color: #f9f9f9; /* Light background for the detail */
+  padding: 5px;
+  margin-top: 5px; /* Space above the detail */
+  border-radius: 4px; /* Rounded corners */
+}
+/* src/Report.css */
+.report-container {
+  max-width: 1000px;                  /* Increased width for a rectangular shape */
+  margin: auto;                      /* Center the container horizontally */
+  padding: 40px;                     /* Padding inside the container */
+  border: 10px solid #ccc;            /* Border around the container */
+  border-radius: 9px;                /* Rounded corners */
+  background-color: #f9f9f9;         /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: left;                  /* Left-aligned text inside the container */
+}
+
+.form-group {
+  margin-bottom: 1px;                /* Space between form fields */
+}
+
+label {
+  font-size: 1.2em;                  /* Increased font size for labels */
+  font-weight: 80;                  /* Adjust font weight for better visibility */
+}
+
+input {
+  width: 100%;                       /* Full width for input fields */
+  padding: 5px;                    /* Padding for input fields */
+  border: 1px solid #ccc;           /* Border for input fields */
+  border-radius: 4px;               /* Rounded corners for input fields */
+  font-size: 1em;                   /* Adjust font size for input fields */
+}
+
+button {
+  padding: 20px 20px;               /* Padding for the submit button */
+  font-size: 1em;                   /* Font size for the button */
+  background-color: #007bff;        /* Background color for the button */
+  color: white;                     /* Text color for the button */
+  border: none;                     /* No border for the button */
+  border-radius: 4px;               /* Rounded corners for the button */
+  cursor: pointer;                   /* Pointer cursor for button */
+  margin-top: 10px;                 /* Margin above the button */
+}
+
+button:hover {
+  background-color: #0056b3;        /* Darker background on hover */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+input {
+  width: 100%; /* Full width input */
+  padding: 8px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 4px; /* Rounded corners */
+}
+
+button {
+  padding: 10px 15px; /* Padding for button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+/* src/Report.css */
+.back-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* No underline */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.admin-container {
+  max-width: 600px;                  /* Max width for the admin container */
+  margin: 0 auto;                    /* Center the container */
+  padding: 20px;                     /* Padding inside the container */
+  border: 1px solid #ccc;            /* Border around the container */
+  border-radius: 7px;                /* Rounded corners */
+  background-color: #f9f9f9;         /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center;                 /* Center text inside the container */
+}
+
+.volunteer-name-container {
+  margin-bottom: 20px;                /* Space below the volunteer name container */
+  padding: 10px;                      /* Padding inside the volunteer name container */
+  border: 2px solid #ccc;             /* Border around the volunteer name container */
+  border-radius: 7px;                 /* Rounded corners */
+  background-color: #e9ecef;          /* Slightly darker background for emphasis */
+}
+
+.volunteer-info-container {
+  margin-bottom: 20px;                /* Space below the info container */
+}
+
+.volunteer-table {
+  width: 100%;                        /* Full width of the container */
+  border-collapse: collapse;          /* Collapse borders */
+}
+
+.volunteer-table th, .volunteer-table td {
+  border: 1px solid #ccc;             /* Border for table cells */
+  padding: 10px;                      /* Padding inside table cells */
+  text-align: left;                   /* Left align text */
+}
+
+.volunteer-button {
+  padding: 10px 20px;                 /* Padding for the button */
+  background-color: #007bff;         /* Button background color */
+  color: white;                       /* Button text color */
+  border: none;                       /* Remove border */
+  border-radius: 5px;                /* Rounded corners */
+  cursor: pointer;                    /* Cursor change on hover */
+}
+
+.volunteer-button:hover {
+  background-color: #0056b3;          /* Darken on hover */
+}
+.volunteer-form-container {
+  margin-top: 20px; /* Space above the form */
+  padding: 50px;    /* Padding inside the form container */
+  border: 1px solid #ccc; /* Border for the form container */
+  border-radius: 7px; /* Rounded corners */
+  background-color: #f9f9f9;
+  text-align: left;  /* Light background color */
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column; /* Arrange fields in a column */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space below each input */
+}
+
+.submit-button, .about-us-button {
+  margin-top: 10px; /* Space above the buttons */
+  padding: 10px 15px; /* Padding for the buttons */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor change on hover */
+}
+
+.submit-button:hover, .about-us-button:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+/* src/App.css */
+/* src/App.css */
+
+.about-us-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-us-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-text-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px; /* Add space between the two text sections */
 }
 
-.App-link {
-  color: #61dafb;
+.about-us-text {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-us-images {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-us-image {
+  width: 70%;
+  border-radius: 8px;
 }
