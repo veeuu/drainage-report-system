@@ -40,12 +40,11 @@
   display: flex;                       /* Use flexbox */
   justify-content: center;             /* Center horizontally */
   align-items: center;                 /* Center vertically */
-  height: 150vh;                       /* Full viewport height */
+  height: 120vh;                       /* Full viewport height */
   background-image: url('C:\Users\ADMIN\Desktop\drainage\drain.jfif'); /* Update this with your background image path */
   background-size: cover;              /* Cover the entire area */
   background-position: center;         /* Center the background image */
 }
-/* src/TableOfContents.css */
 /* src/TableOfContents.css */
 .table-of-contents {
   position: absolute;
@@ -322,4 +321,25 @@ button:hover {
 .about-us-image {
   width: 70%;
   border-radius: 8px;
+}
+/* Footer styles */
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

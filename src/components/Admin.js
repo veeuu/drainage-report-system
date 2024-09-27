@@ -8,16 +8,16 @@ const Admin = () => {
 
     // Sample data for volunteers
     const volunteers = [
-        { name: 'John Doe', number: '123-456-7890', email: 'johndoe@example.com' },
-        { name: 'Jane Smith', number: '987-654-3210', email: 'janesmith@example.com' },
-        { name: 'Alice Johnson', number: '555-123-4567', email: 'alice.johnson@example.com' },
-        { name: 'Bob Brown', number: '555-234-5678', email: 'bob.brown@example.com' },
-        { name: 'Charlie Davis', number: '555-345-6789', email: 'charlie.davis@example.com' },
-        { name: 'Diana Evans', number: '555-456-7890', email: 'diana.evans@example.com' },
-        { name: 'Ethan Foster', number: '555-567-8901', email: 'ethan.foster@example.com' },
-        { name: 'Fiona Green', number: '555-678-9012', email: 'fiona.green@example.com' },
-        { name: 'George Harris', number: '555-789-0123', email: 'george.harris@example.com' },
-        { name: 'Hannah Ivers', number: '555-890-1234', email: 'hannah.ivers@example.com' },
+        { name: 'Vidhisha Kamble', number: '123-456-7890', email: 'veeekamble@gmail.com' },
+        { name: 'Samrudhhi Deshpande', number: '987-654-3210', email: 'sam@gmail.com' },
+        { name: 'Atharva Kapde', number: '555-123-4567', email: 'atharva@gmail.com' },
+        { name: 'Arpit Agarwal', number: '555-234-5678', email: 'appu@gmail.com' },
+        { name: 'Harshit Agarwal', number: '555-345-6789', email: 'harshit@gmail.com' },
+        { name: 'Ruchi Agarwal', number: '555-456-7890', email: 'ruchi@gmail.com' },
+        { name: 'Rajani Kamble', number: '555-567-8901', email: 'rajanikamble@gmail.com' },
+        { name: 'Arjun Kamble', number: '555-678-9012', email: 'arjunkamble@gmail.com' },
+        { name: 'Akanksha Kamble', number: '555-789-0123', email: 'akanksha@gmail.com' },
+        { name: 'Khushi Agarwal', number: '555-890-1234', email: 'khushiagarwal@gmail.com' },
     ];
 
     const handleVolunteerClick = () => {
